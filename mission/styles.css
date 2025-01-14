@@ -1,0 +1,29 @@
+html *
+{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    width: 600px;
+    margin: auto;
+    padding: 0%;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #006eb6
+}
+img {
+    width: 150px;
+}
