@@ -3,7 +3,7 @@ html *
     font-family: 'Times New Roman', Times, serif !important;
 }
 
-p {
+p, .byu-list {
     font-size: 20px;
     text-align: left;
     width: 600px;
@@ -11,19 +11,43 @@ p {
     padding: 0%;
     line-height: 1.5;
 }
+p {
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+li {
+    margin: 15px 0;
+    margin-left: 50px;
+}
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     text-transform: capitalize;
     text-align: center;
     letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 h2 {
     font-size: 20px;
     text-transform: capitalize;
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 20px;
     color: #006eb6
+    
 }
-img {
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
     width: 150px;
 }
