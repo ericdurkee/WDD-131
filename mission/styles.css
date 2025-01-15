@@ -51,3 +51,10 @@ h2 {
     margin-bottom: 25px;
     width: 150px;
 }
+body.dark {
+    background-color: #333;
+    color: white;
+}
+body.dark h2 {
+    color:#0295f6
+}
