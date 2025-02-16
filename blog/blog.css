@@ -1,0 +1,117 @@
+/* Universal */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 2px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 20px;
+}
+
+/* Header */
+hr {
+    height: 1px;
+    background-color: #068a4c;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #068a4c;
+    font-weight: bold;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-details {
+    font-size: 0.9rem;
+    color: #068a4c;
+    text-align: right;
+    line-height: 1.5;
+    border-right: 3px solid #068a4c;
+    padding-right: 20px;
+}
+
+.article-content h2 {
+    font-size: 1.5rem;
+    color: #AF1B3F;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.article-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.filters {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.skiptocontent a {
+    position: absolute;
+    top: -40px; 
+    background-color: #068a4c; 
+    color: white;
+    padding: 10px;
+    z-index: 100; 
+    transition: top 0.3s ease; 
+}
+
+.skiptocontent a:focus {
+    top: 0; 
+}
