@@ -15,13 +15,21 @@ body {
     font-size: 1.2em;
     margin: 0;
     color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
 }
 
-header, footer {
+/* Header */
+header {
     background-color: var(--primary-color);
     color: var(--text-light);
-    text-align: center;
+    text-align: center; /* Center text */
     padding: 1em;
+    width: 100%; /* Ensure header stretches across the page */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items within header */
 }
 
 h1 {
@@ -29,14 +37,13 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    text-align: center;
-}
+/* Navigation */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center nav items */
     background-color: var(--primary-color);
     padding: 0.5em;
+    width: 100%; /* Ensure nav stretches across the page */
 }
 
 nav ul {
@@ -61,8 +68,9 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/* Menu button */
 .menu-button {
-    display: none;
+    display: block;
     background: none;
     border: none;
     color: var(--text-light);
@@ -74,15 +82,19 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/* Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em;
+    max-width: 100%;
+    justify-items: center; /* Center images */
 }
 
-gallery figure {
+.gallery figure {
     margin: 0;
+    text-align: center;
 }
 
 img {
@@ -92,15 +104,41 @@ img {
     max-width: 100%;
 }
 
-@media screen and (max-width: 999px) {
-    .menu-button {
-        display: block;
+/* Current Work Section */
+main {
+    text-align: center; /* Center the content of the main section */
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center; /* Center footer text */
+    padding: 1em;
+    width: 100%; /* Ensure footer stretches across the page */
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: auto;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    /* Hide menu button on large screens */
     .menu-button {
         display: none;
     }
 }
+
 
