@@ -17,19 +17,19 @@ body {
     color: var(--text-dark);
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content horizontally */
+    align-items: center; 
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
     color: var(--text-light);
-    text-align: center; /* Center text */
+    text-align: center; 
     padding: 1em;
-    width: 100%; /* Ensure header stretches across the page */
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items within header */
+    align-items: center; 
 }
 
 h1 {
@@ -40,10 +40,10 @@ h1 {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: center; /* Center nav items */
+    justify-content: center;
     background-color: var(--primary-color);
     padding: 0.5em;
-    width: 100%; /* Ensure nav stretches across the page */
+    width: 100%; 
 }
 
 nav ul {
@@ -89,7 +89,7 @@ nav a:hover {
     gap: 1em;
     padding: 1em;
     max-width: 100%;
-    justify-items: center; /* Center images */
+    justify-items: center;
 }
 
 .gallery figure {
@@ -104,9 +104,8 @@ img {
     max-width: 100%;
 }
 
-/* Current Work Section */
 main {
-    text-align: center; /* Center the content of the main section */
+    text-align: center; 
     width: 100%;
 }
 
@@ -114,12 +113,12 @@ main {
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    text-align: center; /* Center footer text */
+    text-align: center; 
     padding: 1em;
-    width: 100%; /* Ensure footer stretches across the page */
+    width: 100%;
 }
 
-/* Responsive Design */
+
 @media (min-width: 600px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -135,7 +134,6 @@ footer {
         margin: auto;
     }
     
-    /* Hide menu button on large screens */
     .menu-button {
         display: none;
     }
