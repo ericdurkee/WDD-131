@@ -17,9 +17,8 @@ body {
     color: var(--text-dark);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;  
 }
-
 /* Header */
 header {
     background-color: var(--primary-color);
@@ -36,11 +35,10 @@ h1 {
     font-family: var(--secondary-font);
     margin: 0;
 }
-
-/* Navigation */
+/* Navigation section */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     background-color: var(--primary-color);
     padding: 0.5em;
     width: 100%; 
@@ -67,8 +65,12 @@ nav a {
 nav a:hover {
     color: var(--secondary-color);
 }
+/* Hides menu on smaller screens*/
+.hide {
+    display: none;
+}
 
-/* Menu button */
+/* Menu button*/
 .menu-button {
     display: block;
     background: none;
@@ -81,15 +83,14 @@ nav a:hover {
 .menu-button:hover {
     color: var(--secondary-color);
 }
-
-/* Gallery */
+/* Gallery format/img */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em;
     max-width: 100%;
-    justify-items: center;
+    justify-items: center; 
 }
 
 .gallery figure {
@@ -97,7 +98,7 @@ nav a:hover {
     text-align: center;
 }
 
-img {
+.gallery img {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -115,9 +116,37 @@ footer {
     color: var(--text-light);
     text-align: center; 
     padding: 1em;
-    width: 100%;
+    width: 100%; 
 }
 
+/* Viewer */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 100%;
+
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
 
 @media (min-width: 600px) {
     .gallery {
@@ -138,6 +167,8 @@ footer {
         display: none;
     }
 }
+
+
 
 
 
