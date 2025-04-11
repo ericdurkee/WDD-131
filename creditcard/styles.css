@@ -5,7 +5,6 @@ body {
     padding: 2rem;
   }
   
-  
   .form-wrapper {
     max-width: 420px;
     margin: 0 auto;
@@ -20,7 +19,6 @@ body {
     margin-bottom: 1rem;
   }
   
-  /* Shared Card Styles */
   .card {
     border-radius: 12px;
     padding: 20px;
@@ -32,15 +30,13 @@ body {
     justify-content: center;
     background-color: #f1f1f1;
   }
-  
-  /* Card Back */
+
   .card-back {
     background-color: #d3d3d3;
     z-index: 0;
     transform: translate(100px, 70px);
   }
   
-  /* Card Front */
   .card-front {
     background-color: #e6e6e6;
     z-index: 1;
@@ -64,7 +60,6 @@ body {
     height: auto;
   }
   
-  /* Form Elements */
   .form-group {
     margin-top: 1rem;
   }
@@ -82,7 +77,6 @@ body {
     font-size: 0.85rem;
   }
   
-  /* Row for Holder + Expiration */
   .form-row {
     display: flex;
     gap: 20px;
@@ -98,7 +92,6 @@ body {
     width: 48%;
   }
   
-  /* Submit Button */
   .submit-btn {
     padding: 10px 20px;
     font-size: 1rem;
