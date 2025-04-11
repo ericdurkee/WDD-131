@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Card Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+
+  <div class="form-wrapper">
+    <div class="card-grid">
+      <div class="card card-back">
+        <div class="form-group">
+          <label for="cvc">CVC/CVV</label>
+          <input type="text" id="cvc" placeholder="XXX" />
+        </div>
+      </div>
+
+      <div class="card card-front">
+        <div class="card-header">
+          <p class="total">TOTAL: $199</p>
+          <img src="customimage.png" alt="Card Icon" class="card-icon" />
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">CARD NUMBER</label>
+          <input type="text" id="card-number" placeholder="1234 5678 9101 1020" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="card-holder">CARD HOLDER</label>
+            <input type="text" id="card-holder" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label for="exp-month">EXPIRATION</label>
+            <div class="exp-row">
+              <input type="text" id="exp-month" placeholder="MM" />
+              <input type="text" id="exp-year" placeholder="YY" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="submit-btn">Submit</button>
+  </div>
+</body>
+</html>
